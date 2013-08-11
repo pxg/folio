@@ -5,8 +5,6 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'folio.views.home', name='home'),
-    # url(r'^folio/', include('folio.foo.urls')),
+    url(r'^$', 'folio.views.index', name='index'),
     url(r'^admin/', include(admin.site.urls)),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,263 @@
+/* =0 Eric Meyer css reset - modify as necessary */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, font, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+        
+        body {
+            line-height: 1;
+        }
+        
+        ol, ul {
+            padding-top: 10px;
+            list-style: square;
+        }
+        
+        blockquote, q {
+            quotes: none;
+        }
+        
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+        }
+
+        /* remember to define focus styles! */
+        :focus {
+            outline: 0;
+        }
+
+        /* remember to highlight inserts somehow! */
+        ins {
+            text-decoration: none;
+        }
+        
+        del {
+            text-decoration: line-through;
+        }
+
+        /* tables still need 'cellspacing="0"' in the markup */
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+/* =1 html elements */
+
+        body {
+            background: #fff;
+            color: #000;
+            font: 62.5%/1.25 Monaco, "Lucida Console", monospace; /* reset 1em to 10px */
+        }
+
+        /*
+         * headings
+         */
+                h1 {
+                    color: #FFF;
+                    font-family: monospace;
+                    font-size: 48px;
+                    font-weight: normal;
+                    text-align: center;
+                }
+
+                h1 span {
+                    font-size: 22px;
+                    display: block;
+                    color: #fa1178;
+                }
+                
+                h2 {
+                    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+                    font-size: 18px;
+                    padding-bottom: 6px;
+                }
+                
+                h3 {
+                    font-weight: normal;
+                    margin-bottom: 0.5em;
+                }
+
+
+        /*
+         * lists
+         */
+                li {
+                    padding-bottom: 0.2em;
+                    margin-left: 18px;
+                }
+
+
+        /*
+         * text
+         */
+                p, li{
+                    color: #666;
+                    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+                    font-size: 12px;
+                    margin-bottom: 0.6em;
+                    line-height:150%;
+                }
+
+
+        /*
+         * links
+         */
+                a {
+                    /*color: #fff;*/
+                }
+
+                a:hover,
+                a:active, 
+                a:focus {
+                    color: #7F7F7F;
+                    background-color: #fff;
+                    text-decoration: none;
+                }
+                
+                
+                #about a:hover,
+                #about a:active, 
+                #about a:focus,
+                #footer a:hover,
+                #footer a:active, 
+                #footer a:focus {
+                    color: #393939;
+                }
+
+        /*
+         * misc
+         */
+
+
+/* =1 global classes */
+        /* print styles */
+        .printonly { display: none !important; }
+
+        /*
+        * clearfix - fixes float clearing issues
+        */
+                /* Gecko-based browsers */
+                 .clearfix:after {
+                    content: "."; 
+                    display: block; 
+                    height: 0px; 
+                    clear: both; 
+                    visibility: hidden;
+                }
+
+
+/* =2 global ids / areas */
+        /*
+         * Jump links - accessibility friendly links at the top of every page
+         */
+                /* not added because content starts at top of page - nothing to jump! */
+
+        /*
+         * header
+         */
+                #header {
+                    background-color: #000;
+                    margin-bottom: 3.5em;
+                    overflow: auto; /* triggers clearfix */
+                    padding: 2em 0 2em 0;
+                }
+
+
+        /*
+         * content
+         */
+                #content {
+                    margin: 0 1.5em 0 3.5em;
+                    padding-bottom: 2em;
+                    position: relative;
+                }
+                
+                .project {
+                    background-color: #efefef; /*#FFF;*/
+                    margin: 0 1.5em 0 0;
+                    padding: 1em 1em 2.5em;
+                    width: 365px;
+                }
+                
+                .hasJs .project {
+                    position: absolute;
+                }
+
+                .project img {
+                    margin-bottom: 1em;
+                    position: relative;
+                }
+
+
+                /*
+                 * content : about
+                 */
+                        #about {
+                            background-color: #ffff56; /*#f9e611;*/
+                        }
+
+        /*
+         * footer
+         */
+                #footer {
+                    background-color: #393939;
+                    width: 100%;
+                }
+
+                #footer p {
+                    padding: 1em 0 1em 4.5em;
+                    margin: 0;
+                }
+    
+
+/* = page specific styles */
+
+/* iPhone rules */
+@media all and (max-device-width: 320px) {
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h1 span {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    #header {
+        margin-bottom: 0;
+    }
+
+    .project {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .hasJs .project {
+        position: relative;
+    }
+
+    img {
+        width: 300px;
+        height: auto;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+}
