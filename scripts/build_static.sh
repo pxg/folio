@@ -1,0 +1,1 @@
+wget -m 127.0.0.1:8000 --directory-prefix=../publish/
