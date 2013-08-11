@@ -1,11 +1,13 @@
 
 TODO:
- - boto script to publish to s3
- - add more content
- - order content
- - edit general text in site (key/value or flat pages)
  - slugs for project pages
+ - order content
+ - add more content
+ - edit general text in site (key/value or flat pages)
+
+ - boto script to publish to s3
  - publish button
+
  - alt text on images
  - Lightbox bigger images
  - host CMS on server
