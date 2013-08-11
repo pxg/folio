@@ -11,6 +11,7 @@ TODO:
  - alt text on images
  - Lightbox bigger images
  - host CMS on server
+ - sitemap.xml
 
 REFACTOR:
  - remove need to collect static?

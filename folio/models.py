@@ -5,12 +5,13 @@ class Project(models.Model):
     title = models.CharField(max_length=140)
     description = models.TextField()
     url = models.URLField(null=True, blank=True)
+    video = models.URLField(null=True, blank=True)
+    role = models.CharField(max_length=140, default='')
+    technologies = models.CharField(max_length=140, default='')
     picture = models.ImageField(upload_to='img/', blank=True)
     #slug?
     #priority so we can arrange this (use ordered model?)
     #boolean whether to show of not
-    #my role
-    #video
 
     # System fields
     created_at = models.DateTimeField(auto_now_add=True)
