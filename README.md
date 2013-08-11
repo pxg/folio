@@ -14,13 +14,12 @@ The static site files will now be in 'publish/127.0.0.1:8000'. You can test they
 
 
 TODO:
- - boto script to publish to s3
- - publish button (calls unified script)
-
- - fix title styling
+ - edit general text in site (key/value or flat pages)
  - order content
  - add more content
- - edit general text in site (key/value or flat pages)
+ - publish button (calls unified script)
+
+ - sort JS layout bug on initial load
 
 ################################################################################
 

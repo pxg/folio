@@ -1,11 +1,12 @@
+#!/usr/bin/env python
 import os
-import boto
 
 from boto.s3.connection import S3Connection
 from boto.s3.key import Key
 
+
 def upload_dir_to_s3(source_dir, bucket):
-    conn = boto.connect_s3(os.getenv('AWS_ACCESS_KEY_ID'),
+    conn = S3Connection(os.getenv('AWS_ACCESS_KEY_ID'),
                            os.getenv('AWS_SECRET_ACCESS_KEY'))
     b = conn.get_bucket(bucket)
     k = Key(b)

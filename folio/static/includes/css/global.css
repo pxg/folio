@@ -16,20 +16,20 @@
             vertical-align: baseline;
             background: transparent;
         }
-        
+
         body {
             line-height: 1;
         }
-        
+
         ol, ul {
             padding-top: 10px;
             list-style: square;
         }
-        
+
         blockquote, q {
             quotes: none;
         }
-        
+
         blockquote:before, blockquote:after,
         q:before, q:after {
             content: '';
@@ -44,7 +44,7 @@
         ins {
             text-decoration: none;
         }
-        
+
         del {
             text-decoration: line-through;
         }
@@ -80,13 +80,18 @@
                     display: block;
                     color: #fa1178;
                 }
-                
+
                 h2 {
                     font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
                     font-size: 18px;
                     padding-bottom: 6px;
                 }
-                
+
+                h2 a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
                 h3 {
                     font-weight: normal;
                     margin-bottom: 0.5em;
@@ -122,19 +127,19 @@
                 }
 
                 a:hover,
-                a:active, 
+                a:active,
                 a:focus {
                     color: #7F7F7F;
                     background-color: #fff;
                     text-decoration: none;
                 }
-                
-                
+
+
                 #about a:hover,
-                #about a:active, 
+                #about a:active,
                 #about a:focus,
                 #footer a:hover,
-                #footer a:active, 
+                #footer a:active,
                 #footer a:focus {
                     color: #393939;
                 }
@@ -153,10 +158,10 @@
         */
                 /* Gecko-based browsers */
                  .clearfix:after {
-                    content: "."; 
-                    display: block; 
-                    height: 0px; 
-                    clear: both; 
+                    content: ".";
+                    display: block;
+                    height: 0px;
+                    clear: both;
                     visibility: hidden;
                 }
 
@@ -186,14 +191,14 @@
                     padding-bottom: 2em;
                     position: relative;
                 }
-                
+
                 .project {
                     background-color: #efefef; /*#FFF;*/
                     margin: 0 1.5em 0 0;
                     padding: 1em 1em 2.5em;
                     width: 365px;
                 }
-                
+
                 .hasJs .project {
                     position: absolute;
                 }
@@ -223,7 +228,7 @@
                     padding: 1em 0 1em 4.5em;
                     margin: 0;
                 }
-    
+
 
 /* = page specific styles */
 

@@ -4,9 +4,9 @@
 {{ project.description|safe }}
 <ul>
     <li>Role: {{ project.role }}</li>
-    <li>URL: <a href="{{ project.url }}">{{ project.url }}</a></li>
+    <li>URL: <a href="{{ project.url }}" target="_blank">{{ project.url }}</a></li>
     {% if project.video %}
-    <li>Video:  <a href="{{ project.video }}">{{ project.video }}</a></li>
+    <li>Video:  <a href="{{ project.video }}" target="_blank">{{ project.video }}</a></li>
     {% endif %}
     <li>Technologies: {{ project.technologies }}</li>
 </ul>
