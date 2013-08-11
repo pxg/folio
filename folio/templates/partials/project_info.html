@@ -1,6 +1,6 @@
 <!-- TODO: set image alt tags in the CMS (height and width auto with PIL) -->
 <img src="{{ MEDIA_URL }}{{ project.picture }}" alt="" />
-<h2><a href="{% url "folio.views.detail" project.id %}">{{ project.title }}</a></h2>
+<h2><a href="{% url "folio.views.detail" project.slug %}">{{ project.title }}</a></h2>
 {{ project.description|safe }}
 <ul>
     <li>Role: {{ project.role }}</li>

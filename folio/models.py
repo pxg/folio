@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.template.defaultfilters import slugify
 
 class Project(models.Model):
     title = models.CharField(max_length=140)
@@ -9,7 +9,7 @@ class Project(models.Model):
     role = models.CharField(max_length=140, default='')
     technologies = models.CharField(max_length=140, default='')
     picture = models.ImageField(upload_to='img/', blank=True)
-    #slug?
+    slug = models.CharField(max_length=140, null=True)
     #priority so we can arrange this (use ordered model?)
     #boolean whether to show of not
 
@@ -19,6 +19,11 @@ class Project(models.Model):
 
     def __unicode__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        if not self.id:
+            self.slug = slugify(self.title)
+        super(Project, self).save(*args, **kwargs)
 
     class Meta:
         ordering = ['title']

@@ -15,7 +15,7 @@ def contact(request):
                               context_instance=RequestContext(request))
 
 
-def detail(request, project_id):
-    project = get_object_or_404(Project, id=project_id)
+def detail(request, slug):
+    project = get_object_or_404(Project, slug=slug)
     return render_to_response('detail.html', {'project': project},
                               context_instance=RequestContext(request))

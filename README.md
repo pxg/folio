@@ -1,12 +1,14 @@
 
 TODO:
- - slugs for project pages
+ - boto script to publish to s3
+ - publish button
+
+ - fix title styling
  - order content
  - add more content
  - edit general text in site (key/value or flat pages)
 
- - boto script to publish to s3
- - publish button
+################################################################################
 
  - alt text on images
  - Lightbox bigger images

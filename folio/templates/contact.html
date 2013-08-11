@@ -1,42 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Pete X. Graham - Freelance Web Developer</title>
-        <meta name="description" content="Pete Graham: Freelance Webdeveloper. I specialise in building websites in Django/Python, HTML, CSS, JS ">
-        <meta name="keywords" content="development, Python, Django, PHP, HTML, CSS, JS, Pete, Graham">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+{% extends "base.html" %}
 
-        <link href="{{STATIC_URL}}includes/css/global.css" media="all" type="text/css" rel="stylesheet" />
+{% block body %}
+<div class="project" id="about">
+    <h2>Contact</h2>
+    <p>You can contact me via email <a href="mailto:hello@petegraham.co.uk">hello@petegraham.co.uk</a>
+    </p>
+</div>
 
-        <script type="text/javascript" src="{{STATIC_URL}}includes/js/lib/jquery/jquery-1.3.2.min.js"></script>
-        <script type="text/javascript" id="libman" src="{{STATIC_URL}}includes/js/libman.js"></script>
-        <script type="text/javascript" id="libman" src="{{STATIC_URL}}includes/js/site/projectsort.js"></script>
+{% for project in projects %}
+<div class="project">
+    {% include 'partials/project_info.html' %}
+</div>
+{% endfor %}
+<!-- node.js RSS to Facebook https://github.com/pxg/Node-Rss-to-Twitter -->
 
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-        <!--
-        Hey since you're reading this you must like code!
-        You can see lot's more code I've written on Github
-        https://github.com/pxg
-        -->
-
-    </head>
-
-    <body id="home">
-        <div id="header">
-            <h1>Pete X. Graham<span>Web Developer && Internet Scientist && Man</span></h1>
-        </div>
-
-        <div id="content">
-
-            <div class="project" id="about">
-                <h2>Hello</h2>
-                <p>Test page to test wget.</p>
-                </p>
-            </div>
-        </div>
-
-    </body>
-</html>
+{% endblock %}
