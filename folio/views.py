@@ -8,3 +8,8 @@ def index(request):
     projects = Project.objects.all()
     return render_to_response('index.html', {'projects': projects},
                               context_instance=RequestContext(request))
+
+
+def contact(request):
+    return render_to_response('contact.html',
+    						  context_instance=RequestContext(request))
