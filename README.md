@@ -14,8 +14,7 @@ The static site files will now be in 'publish/127.0.0.1:8000'. You can test they
 
 
 TODO:
- - edit general text in site (key/value or flat pages)
- - order content
+ - order content (orderedmodel)
  - add more content
  - publish button (calls unified script)
 
@@ -27,7 +26,9 @@ TODO:
  - Lightbox bigger images
  - host CMS on server
  - sitemap.xml
+ - WYSIWYG editor on copy and project main content
 
 REFACTOR:
  - remove need to collect static?
  - review if we require wget alternatives (https://github.com/timetric/django-staticgenerator, https://github.com/koenbok/Cactus, https://pypi.python.org/pypi/staticgenerator)
+ - review site structure and layout, can we simplify?

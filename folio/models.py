@@ -32,3 +32,18 @@ class Project(models.Model):
 # Class Agency
 # Class Company
 # Class Technolgy # maybe do as tags?
+
+class Copy(models.Model):
+    key = models.CharField(max_length=40)
+    value = models.TextField()
+    description = models.CharField(max_length=40, blank=True, null=True)
+
+    # System fields
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __unicode__(self):
+        return self.key
+
+    class Meta:
+        verbose_name_plural  = 'Copy'

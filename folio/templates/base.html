@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Pete X. Graham - Freelance Web Developer</title>
-        <meta name="description" content="Pete Graham: Freelance Webdeveloper. I specialise in building websites in Django/Python, HTML, CSS, JS ">
-        <meta name="keywords" content="development, Python, Django, PHP, HTML, CSS, JS, Pete, Graham">
+        <title>{{ copy.title }} - {{ copy.subtitle }}</title>
+        <meta name="description" content="{{ copy.meta_description }}">
+        <meta name="keywords" content="{{ copy.meta_keywords }}">
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 
         <link href="{{STATIC_URL}}includes/css/global.css" media="all" type="text/css" rel="stylesheet" />
@@ -26,7 +26,7 @@
 
     <body id="home">
         <div id="header">
-            <h1>Pete X. Graham<span>Web Developer. Internet Scientist. Man</span></h1>
+            <h1>{{ copy.title }}<span>{{ copy.subtitle }}</span></h1>
         </div>
 
         <div id="content">
